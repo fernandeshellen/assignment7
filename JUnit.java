@@ -1,6 +1,7 @@
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertTrue;
 import java.io.File;
 import org.junit.jupiter.api.Test;
+
 
 class JUnit {
 
@@ -11,8 +12,6 @@ class JUnit {
 
 		File file = new File(path);
 		String absolutePath = file.getAbsolutePath();
-
-		System.out.println(absolutePath);
 
 		assertTrue(absolutePath.endsWith("/Users/hellenfernandes/Documents/GUI/poem.txt"));
 
